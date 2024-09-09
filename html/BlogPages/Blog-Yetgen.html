@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Demir</title>
+    <link rel="stylesheet" href="C:\Users\Ali Demir\OneDrive\Belgeler\web\css\style2.css">
+    <link rel="stylesheet" href="C:\Users\Ali Demir\OneDrive\Belgeler\web\node_modules\lightbox2\dist\css\lightbox.min.css">
+    <style>
+        .lightboxOverlay {
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="TopBar">
+        <div class="TopBarContainer1"></div>
+        <div class="TopBarContainer">
+            <div class="menu-bar" id="menuBar">
+                Menu   <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu-links" id="menuLinks">
+                <a href="https://www.linkedin.com/in/alidemir58/">
+                    <i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;Linkedin
+                </a>
+                <a href="https://github.com/Ali-Demir-58">
+                    <i class="fa-brands fa-github"></i>&nbsp;&nbsp;github
+                </a>
+                <a href="C:\Users\Ali Demir\OneDrive\Belgeler\web\html\home.html">
+                    <i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home
+                </a>
+                <a href="C:\Users\Ali Demir\OneDrive\Belgeler\web\html\Blog1.html">
+                    <i class="fa-solid fa-blog"></i>&nbsp;&nbsp;Blog
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Text">
+        <h1>YETGEN</h1>
+    </div>
+
+    <div class="Context-W">
+        <a href="C:\Users\Ali Demir\OneDrive\Belgeler\web\images\Yetgen-Team.jpg" data-lightbox="Yetgen" data-title="Yetgen Team">
+            <img src="C:\Users\Ali Demir\OneDrive\Belgeler\web\images\Yetgen-Team.jpg" alt="Yetgen Team">
+        </a>
+    </div>
+    
+    <div class="Text1">
+        <p>
+            I participated in the Yetgen 21st Century Competencies and Awareness Program, where I developed essential skills<br>
+            such as teamwork and presentation techniques, along with technical skills like algorithmic thinking and Excel modeling. <br>
+            Beyond the core themes of 21st-century literacy in information, technology, finance, and digital realms,<br> 
+            I also explored personal development topics such as mindfulness, stress management, and healthy living. Throughout the Yetgen program,<br>
+            I formed meaningful friendships and was inspired to both teach and learn continuously.  <br>
+            Being a Yetgen graduate means embracing continuous learning and valuing diverse perspectives. <br>
+            It involves moving beyond labels, being open-minded, sharing knowledge, taking initiative, and striving for excellence. <br>
+            In essence, the Yetgen experience instilled in me the importance of lifelong learning and personal growth.<br> The journey with Yetgen is ongoing and ever-evolving.<br>  
+        </p>            
+    </div>
+
+
+    <div class="BottomBar">
+        <div class="BottomBarContainer">
+            <a href="https://www.linkedin.com/in/alidemir58/">Linkedln</a>
+            <a href="https://github.com/Ali-Demir-58">Github</a>
+            <a href="C:\Users\Ali Demir\OneDrive\Belgeler\web\html\home.html">Home</a>
+        </div>
+    </div>
+    
+    <script src="C:\Users\Ali Demir\OneDrive\Belgeler\web\node_modules\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
+    <script>
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('lightboxOverlay')) {
+                event.target.click();
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuBar = document.getElementById('menuBar');
+            var menuLinks = document.getElementById('menuLinks');
+
+            menuBar.addEventListener('click', function(event) {
+                event.stopPropagation(); // Prevent the click from propagating to the document
+                if (menuLinks.style.display === 'block') {
+                    menuLinks.style.display = 'none';
+                } else {
+                    menuLinks.style.display = 'block';
+                }
+            });
+
+            // Close the menu if clicking outside of it
+            document.addEventListener('click', function(event) {
+                if (!menuLinks.contains(event.target) && !menuBar.contains(event.target)) {
+                    menuLinks.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

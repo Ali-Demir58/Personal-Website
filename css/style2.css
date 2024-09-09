@@ -1,0 +1,140 @@
+/* Add a background image to the body */
+body {
+    background-image: url("../BackGround.jpeg");
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    margin: 0; /* Remove default margin */
+}
+
+.TopBar {
+    background-color: #050a36;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    position: relative;
+}
+
+.TopBarContainer {
+    display: flex;
+    align-items: center;
+    padding: 14px 30px;
+}
+
+.menu-bar {
+    cursor: pointer;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.menu-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1091cc;
+    position: absolute;
+    top: 50px; /* TopBar'ın yüksekliği kadar yukarıya yerleştirin */
+    right: 10px; /* Menü butonunun hemen altına hizalayın */
+    width: 200px;
+    z-index: 1;
+    border-radius: 4px;
+    padding: 10px; /* Bağlantılar için biraz iç boşluk ekleyin */
+}
+
+.menu-links a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-links a:hover {
+    background-color: #2ac3b4c8;
+}
+
+.Text {
+    margin-top: 5%;
+    color: aliceblue;
+    text-align: center;
+}
+
+.Text h1 {
+    font-size: 80px;
+}
+
+.Context {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Context img {
+    width: 350px;
+    align-items: center;
+}
+
+.Context-W {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Context-W img {
+    width: 600px;
+    align-items: center;
+}
+
+.Context1 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Context1 img {
+    width: 350px;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.Text1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: aliceblue;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Style the BottomBar similar to TopBar */
+.BottomBar {
+    background: linear-gradient(to right, #04042e, #00004B); /* Blue and dark combination */
+    bottom: 0;
+    width: 100%; /* Full width */
+    padding: 10px 0;
+}
+
+/* Style the BottomBarContainer to align items to the right */
+.BottomBarContainer {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    padding-right: 20px; /* Add some right padding */
+}
+
+/* Style the links inside BottomBarContainer */
+.BottomBarContainer a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Space between links */
+    font-size: 16px;
+}
+
+/* Add hover effect to links in BottomBar */
+.BottomBarContainer a:hover {
+    color: #1a98b4; /* Underline on hover */
+}

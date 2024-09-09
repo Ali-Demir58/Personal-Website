@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Demir</title>
+    <link rel="stylesheet" href="C:\Users\Ali Demir\OneDrive\Belgeler\web\css\style2.css">
+    <link rel="stylesheet" href="C:\Users\Ali Demir\OneDrive\Belgeler\web\node_modules\lightbox2\dist\css\lightbox.min.css">
+    <style>
+        .lightboxOverlay {
+            cursor: pointer;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="TopBar">
+        <div class="TopBarContainer1"></div>
+        <div class="TopBarContainer">
+            <div class="menu-bar" id="menuBar">
+                Menu   <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="menu-links" id="menuLinks">
+                <a href="https://www.linkedin.com/in/alidemir58/">
+                    <i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;Linkedin
+                </a>
+                <a href="https://github.com/Ali-Demir-58">
+                    <i class="fa-brands fa-github"></i>&nbsp;&nbsp;github
+                </a>
+                <a href="C:\Users\Ali Demir\OneDrive\Belgeler\web\html\home.html">
+                    <i class="fa-solid fa-house"></i>&nbsp;&nbsp;Home
+                </a>
+                <a href="C:\Users\Ali Demir\OneDrive\Belgeler\web\html\Blog1.html">
+                    <i class="fa-solid fa-blog"></i>&nbsp;&nbsp;Blog
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Text">
+        <h1>Innovation Boost</h1>
+    </div>
+
+    <div class="Context1">
+        <a href="C:\Users\Ali Demir\OneDrive\Belgeler\web\images\InnovationBoost2.jpeg" data-lightbox="Innovation Boost" data-title="My Second Innovation Boost">
+            <img src="C:\Users\Ali Demir\OneDrive\Belgeler\web\images\InnovationBoost2.jpeg" alt="My Second Innovation Boost">
+        </a>
+        <a href="C:\Users\Ali Demir\OneDrive\Belgeler\web\images\InnovationBoost1.jpeg" data-lightbox="Innovation Boost" data-title="My First Innovation Boost">
+            <img src="C:\Users\Ali Demir\OneDrive\Belgeler\web\images\InnovationBoost1.jpeg" alt="My First Innovation Boost">
+            </a>
+
+    </div>
+    
+    <div class="Text1">
+        <p>
+            I participated in two Innovation Boosts during my two years with the ITU Entrepreneurship Club,<br>
+            securing 3rd place in both. In the first competition, our healthy living idea was well-received <br>
+            by health officials and mentors. Afterward, we worked on developing a mobile application to bring <br>
+            the idea to life. In the second competition, our focus was on digital marketing, and although we earned<br>
+            3rd place again, we struggled to clearly explain our business model and differentiate ourselves from competitors.<br>
+            These experiences taught me valuable lessons about generating startup ideas and advancing them through the entrepreneurial journey<br>
+        </p>            
+    </div>
+
+
+    <div class="BottomBar">
+        <div class="BottomBarContainer">
+            <a href="https://www.linkedin.com/in/alidemir58/">Linkedln</a>
+            <a href="https://github.com/Ali-Demir-58">Github</a>
+            <a href="C:\Users\Ali Demir\OneDrive\Belgeler\web\html\home.html">Home</a>
+        </div>
+    </div>
+    
+    <script src="C:\Users\Ali Demir\OneDrive\Belgeler\web\node_modules\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
+    <script>
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('lightboxOverlay')) {
+                event.target.click();
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var menuBar = document.getElementById('menuBar');
+            var menuLinks = document.getElementById('menuLinks');
+
+            menuBar.addEventListener('click', function(event) {
+                event.stopPropagation(); // Prevent the click from propagating to the document
+                if (menuLinks.style.display === 'block') {
+                    menuLinks.style.display = 'none';
+                } else {
+                    menuLinks.style.display = 'block';
+                }
+            });
+
+            // Close the menu if clicking outside of it
+            document.addEventListener('click', function(event) {
+                if (!menuLinks.contains(event.target) && !menuBar.contains(event.target)) {
+                    menuLinks.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
