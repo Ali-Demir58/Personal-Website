@@ -1,0 +1,210 @@
+/* Add a background image to the body */
+body {
+    background-image: url("../BackGround.jpeg");
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    margin: 0; /* Remove default margin */
+}
+
+.TopBar {
+    background-color: #050a36;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    position: relative;
+}
+
+.TopBarContainer {
+    display: flex;
+    align-items: center;
+    padding: 14px 30px;
+}
+
+.menu-bar {
+    cursor: pointer;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.menu-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1091cc;
+    position: absolute;
+    top: 50px; /* TopBar'ın yüksekliği kadar yukarıya yerleştirin */
+    right: 10px; /* Menü butonunun hemen altına hizalayın */
+    width: 200px;
+    z-index: 1;
+    border-radius: 4px;
+    padding: 10px; /* Bağlantılar için biraz iç boşluk ekleyin */
+}
+
+.menu-links a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-links a:hover {
+    background-color: #2ac3b4c8;
+}
+
+
+/* Make MainPicture1 image circular */
+.circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.MainPitcure1Container p {
+    text-align: center;
+    color: aliceblue;
+}
+
+.MainPitcure1Container h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Center the CV button in its row */
+.CV {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    margin-top: 10px; /* Add space between the image and the button */
+}
+
+/* Style for the CV button */
+.CV h3 a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Hover effect for CV Button*/
+.CV h3 a:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the About section */
+.About {
+    margin-top: 90px;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    padding: 30px;
+}
+
+.Presentation1 {
+    margin-left: 2%;
+    margin-top: 12%;
+}
+
+.AboutContainer {
+    margin-top: 100px;
+    padding: 20px;
+    margin-left: 20px; /* Add some space between the image and the text */
+    color: aliceblue;
+}
+
+.AboutContainer h2 {
+    padding-left: 15px;
+}
+
+.AboutContainer p {
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style for the ContactMe section */
+.ContactMe {
+    padding: 40px 60px;
+    margin-top: 13%;
+}
+
+.ContactMeContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ContactMeContainer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ContactMeContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactMeContainer label {
+    margin-bottom: 5px;
+}
+
+.ContactMeContainer input,
+.ContactMeContainer textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ContactMeContainer button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ContactMeContainer button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the BottomBar similar to TopBar */
+.BottomBar {
+    background: linear-gradient(to right, #04042e, #00004B); /* Blue and dark combination */
+    bottom: 0;
+    width: 100%; /* Full width */
+    padding: 10px 0;
+}
+
+/* Style the BottomBarContainer to align items to the right */
+.BottomBarContainer {
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    padding-right: 20px; /* Add some right padding */
+}
+
+/* Style the links inside BottomBarContainer */
+.BottomBarContainer a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Space between links */
+    font-size: 16px;
+}
+
+/* Add hover effect to links in BottomBar */
+.BottomBarContainer a:hover {
+    color: #1a98b4; /* Underline on hover */
+}
